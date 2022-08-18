@@ -1,10 +1,4 @@
-/* :root{
-    --font: rgb(9, 238, 250);
-    --background: #d9dcd6;
-
-    var (--font);
-     */
-
+/* describe what you did */
 
 * {
     box-sizing: border-box;
@@ -37,6 +31,8 @@ body {
 nav ul{
     font-size: 40px;
     color: black;
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -171,9 +167,7 @@ button{
 
 }
 
-button:click{
 
-}
 
 button:click::after{
     background-color: aqua;
@@ -200,6 +194,78 @@ form input, form textarea {
 
 
 
+/*  I still gotta figure out how to do media query with my TA */
+/* @media only screen and (min-width: 600px){
+
+    
+    p{
+
+    font-size: 1.25 rem
+
+    }
+
+
+    .photos{
+        flex-basis: 100%;
+    }
+    #img2{
+        flex-basis: 100%
+
+
+
+    
+}
+    #img3{
+        flex-basis: 100%
+
+    }
+
+
+    #img4{
+
+        flex-basis: 100%
+    
+}
+nav ul{
+    flex-shrink: 2;
+
+}
+}
+
+ @media only screen and (min-width: 796px){
+
+    .me{
+
+        font-size: 10px;
+
+    
+        }
+        #img2{
+            flex-basis: 100%
+    
+    
+        
+    }
+        #img3{
+            flex-basis: 100%
+    
+        }
+    
+    
+        #img4{
+            flex-basis: 100%
+        }
+
+        nav ul{
+            flex-basis: 100%
+
+        }
+    }
+    
+
+
+
+ }        */
 
 
 
