@@ -6,29 +6,30 @@
     margin: 0;
 }
 
-#IMG:hover{
-    transform: scale(1.1);
-}
-.card1:hover{
+#IMG:hover {
     transform: scale(1.1);
 }
 
-.card2:hover{
+.card1:hover {
     transform: scale(1.1);
 }
 
-.card3:hover{
+.card2:hover {
+    transform: scale(1.1);
+}
+
+.card3:hover {
     transform: scale(1.1);
 }
 
 
 
 body {
-    color:aliceblue;
+    color: aliceblue;
     background-color: rgb(0, 0, 0);
 }
 
-nav ul{
+nav ul {
     font-size: 40px;
     color: black;
     display: flex;
@@ -37,120 +38,137 @@ nav ul{
 }
 
 header {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    
+
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.title{
+.title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
 }
 
-#IMG{
+#IMG {
     margin-top: 50px;
     width: 300px;
     height: 300px;
-}
-#IMG{
-    position: relative;
-    left: 80px;
     border-radius: 25px;
     transition: transform 0.5s;
+
 }
-.me{
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+
+
+.me {
     font-size: 30px;
-    position:absolute;
+    position: absolute;
     top: 200px;
     left: 400px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-#img2{
-    text-align: center;
+
+#img2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 100px;
     font-size: 30px;
 
 }
-a{
-    color:rgb(241, 241, 241);
+
+a {
+    color: rgb(241, 241, 241);
     text-decoration: none;
 
 }
-.card1{
+
+.card1 {
     border-radius: 10px;
-    width:500px;
-    height: 400px;
-    position: relative;
-    left: 400px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     transition: transform 0.5s;
 }
-.card2{
+
+.card2,
+.card3 {
     border-radius: 10px;
-    width:300px;
-    height:300px;
-    position: absolute;
-    top: 600px;
-    left: 100px;
+    width: 300px;
+    height: 300px;
+
     transition: transform 0.5s;
 }
-.card3{
-    border-radius: 10px;
-    width:300px;
-    height:300px;
-    position: absolute;
-    top: 600px;
-    right: 100px;
-    transition: transform 0.5s;
+
+#img3,
+#img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
-#img3{
-    font-size: 25px;
-    position: relative;
-    bottom: 450px;
-    left: 200px;
+
+h2 #img3,
+h2 #img4 {
+    font-size: 60px;
 }
-#img4{
-    font-size:25px ;
-    position: relative;
-    bottom:480px;
-    left: 1100px;
-}
-.background{
+
+
+
+
+
+
+.background {
     width: 100%;
     height: 800px;
     background-size: cover;
     background-position: center;
 }
+
 header nav {
-    display:inline-block;
-    font-size: 25px; 
+    display: inline-block;
+    font-size: 25px;
 }
 
-header ul, header li, header a{
-    display:inline;
+header ul,
+header li,
+header a {
+    display: inline;
     padding-left: 5px;
     padding-top: 5px;
 }
 
-.btn.btn2{
-    display:inline-block;
+.btn.btn2 {
+    display: inline-block;
     background: gray;
 }
 
-.port h2{
+.port h2 {
     font-size: 40px;
 
 }
 
-.logos{
+.logos {
     font-size: 30px;
     line-height: 3;
 }
+
 footer {
     font-size: 30px;
     padding: 30px;
@@ -160,117 +178,98 @@ footer {
     background-color: gray;
 }
 
-button{
+button {
     position: relative;
     top: -50px;
-    background-color:azure;
+    background-color: azure;
 
 }
 
 
 
-button:click::after{
+button:click::after {
     background-color: aqua;
 }
 
-.hide{
-    display:none;
+.hide {
+    display: none;
 
 }
-    
 
 
-form input, form textarea {
+
+form input,
+form textarea {
     width: 50%;
     border: 2;
-    outline:none;
+    outline: none;
     background: gray;
     padding: 15px;
     margin: 15px;
     color: black;
-    font-size:18px;
+    font-size: 18px;
     border-radius: 6px;
 }
 
+@media only screen and (max-width: 600px) {
 
 
-/*  I still gotta figure out how to do media query with my TA */
-/* @media only screen and (min-width: 600px){
+    p {
 
-    
-    p{
-
-    font-size: 1.25 rem
-
+        font-size: 15px;
     }
 
 
-    .photos{
+    .photos {
         flex-basis: 100%;
     }
-    #img2{
+
+    #img2 {
         flex-basis: 100%
+    }
+
+    #img3 {
+        flex-basis: 100%
+    }
 
 
+    #img4 {
 
-    
+        flex-basis: 100%
+    }
+
+    nav ul {
+        flex-shrink: 2;
+
+    }
 }
-    #img3{
-        flex-basis: 100%
+
+@media only screen and (max-width: 796px) {
+
+    .me {
+
+        font-size: 15px;
+
+
+    }
+
+    #img2,
+    #img3,
+    #img4 {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-shrink: 1;
+
+
 
     }
 
 
-    #img4{
+    nav ul {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
 
-        flex-basis: 100%
-    
-}
-nav ul{
-    flex-shrink: 2;
-
-}
-}
-
- @media only screen and (min-width: 796px){
-
-    .me{
-
-        font-size: 10px;
-
-    
-        }
-        #img2{
-            flex-basis: 100%
-    
-    
-        
     }
-        #img3{
-            flex-basis: 100%
-    
-        }
-    
-    
-        #img4{
-            flex-basis: 100%
-        }
-
-        nav ul{
-            flex-basis: 100%
-
-        }
-    }
-    
-
-
-
- }        */
-
-
-
-
-    
-
-
-
+}
